@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1> Pizza Shop</h1>
+        <form>
+            <fieldset>
+                <legend>Customer;</legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                </div>
+                <div>
+                    <input type="radio" id="halfHalf" name="halfhalf">
+                    <label for="halfHalf">Half and Half</label>
+                </div>
+            <h3> Only Select two if Half and Half is selected and only one if it is not.(For Presets Only)</h3>
+            <div class="row">
+                <fieldset>
+                    <legend>Presets;</legend>
+                    <div>
+                        <input type="checkbox" id="cheese" name="preset">
+                        <label for="cheese">Cheese</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="allMeat" name="preset">
+                        <label for="allMeat">All Meat</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="veggie" name="preset">
+                        <label for="veggie">Veggie</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="hawaiian" name="preset">
+                        <label for="hawaiian">Hawaiian</label>
+                    </div>
+                </fieldset>
+            <div>
+                <fieldset>
+                    <legend>Size;</legend>
+
+                    <div>
+                        <input type="radio" id="small" name="size">
+                        <label for="small">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="size">
+                        <label for="large">Large</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Order</legend>
+                    <div>
+                        <input type="radio" id="deliver" name="order">
+                        <label for="deliver">Deliver</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="eatOut" name="order">
+                        <label for="eatOut">Eat Out</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="eatIn" name="order">
+                        <label for="eatIn">Eat Inside</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Add Toppings;</legend>
+                    <div>
+                        <input type="checkbox" id="pineApple" name="pineApple" value="pineApple">
+                        <label for="pineApple">Pineapple</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="canadianBacon" name="canadianBacon" value="canadianBacon">
+                        <label for="canadianBacon">Canadian Bacon</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+                        <label for="mushrooms">Mushrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                        <label for="sausage">Sausage</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="olives" name="olives" value="olives">
+                        <label for="olives">Olives</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="greenPeppers" name="greenPeppers" value="greenPeppers">
+                        <label for="greenPeppers">Green Peppers</label>
+                    </div>
+                </fieldset>
+            </div>
+            </div>
+            <div>
+               <div class="row">
+                <fieldset>
+                    <legend>Type of Pizza</legend>
+
+                    <label for="container">Please Choose One</label>
+                    <select name="container" id="container">
+                        <option value="regular">Regular Pizza</option>
+                        <option value="deepDish">Deep Dish Pizza</option>
+                        <option value="cheesyCrust">Cheesy Crust</option>
+                        <option value="calzone">Calzone</option>
+                    </select>
+                    <div>
+                        <label for="SpecialRequests">Address</label>
+                        <textarea id="address" name="SpecialRequests" rows="2" cols="8" placeholder="1234 E, Ave"></textarea>
+                    </div>
+                </fieldset>
+                <div>
+                    <fieldset>
+                        <legend>Drinks</legend>
+
+                <label for="drinkCon">Please Choose One</label>
+                        <select name="container" id="drinkCon">
+                        <option value="Water">Water</option>
+                        <option value="Sprite">Sprite</option>
+                        <option value="Dr.Pepper">Dr.Pepper</option>
+                        <option value="RootBeer">RootBeer</option>
+                    </select>
+                        <div>
+                            <label for="SpecialRequests">Special Requests</label>
+                            <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10" placeholder="No Olives, Sausauge , Bacon , etc"></textarea>
+                        </div>
+                    </fieldset>
+            </div>
+               </div>
+            </div>
+            <button type="button" onclick="alert('3000$')">Calculate Cost</button>
+            <button type="submit">Sumbit Order</button>
+            <button type="add1">Add Another Pizza</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html>
